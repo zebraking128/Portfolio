@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aditi Jaiswal – Data Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--ink:#e8ecff;--mute:#8a90b8;--blue:#00d4ff;--purple:#9d4dff;--line:rgba(120,140,255,.22);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{color-scheme:dark;scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 'Space Grotesk',system-ui,sans-serif;overflow-x:hidden}
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+main,header{position:relative;z-index:1}
+header{z-index:10;position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:calc(18px + env(safe-area-inset-top,0px)) 5vw 18px;backdrop-filter:blur(10px);background:linear-gradient(#000a,#0000)}
+header b{font:600 15px 'Unbounded',sans-serif;letter-spacing:.04em}
+nav a{color:var(--mute);text-decoration:none;margin-left:24px;transition:color .2s}
+nav a:hover,nav a:focus-visible{color:var(--blue);outline:none}
+section{min-height:100vh;padding:14vh 5vw 8vh;display:flex;flex-direction:column;justify-content:center;max-width:1200px;margin:auto}
+h1{font:600 clamp(40px,8vw,112px)/1 'Unbounded',sans-serif;margin:0 0 24px;letter-spacing:-.03em;
+color:#fff;
+text-shadow:0 0 28px rgba(0,212,255,.35)}
+h2{font:300 clamp(28px,4vw,52px)/1.1 'Unbounded',sans-serif;margin:0 0 40px}
+.lead{max-width:52ch;color:var(--mute);font-size:19px}
+.cta{display:inline-block;margin-top:36px;padding:14px 30px;border:1px solid var(--blue);color:var(--blue);text-decoration:none;border-radius:999px;
+box-shadow:0 0 18px rgba(0,212,255,.3),inset 0 0 18px rgba(0,212,255,.12);transition:.25s;align-self:flex-start}
+.cta:hover,.cta:focus-visible{background:var(--blue);color:#000;outline:none;box-shadow:0 0 36px var(--blue)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;perspective:1000px}
+.card{color:inherit;text-decoration:none;position:relative;min-height:300px;padding:28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,rgba(20,10,50,.65),rgba(0,10,30,.55));
+backdrop-filter:blur(8px);transform-style:preserve-3d;transition:transform .15s,border-color .3s,box-shadow .3s;display:flex;flex-direction:column;justify-content:flex-end;will-change:transform}
+.card:hover{border-color:var(--purple);box-shadow:0 0 40px rgba(157,77,255,.35)}
+.card .orb{position:absolute;top:24px;right:24px;width:64px;height:64px;border-radius:50%;transform:translateZ(50px);
+background:radial-gradient(circle at 30% 30%,var(--blue),var(--purple) 60%,#10002a);box-shadow:0 0 30px var(--purple)}
+.card h3{font:600 20px 'Unbounded',sans-serif;margin:0 0 8px;transform:translateZ(30px)}
+.card p{margin:0;color:var(--mute);font-size:15px;transform:translateZ(20px)}
+.card small{color:var(--blue);margin-top:14px;transform:translateZ(20px)}
+.tags{display:flex;flex-wrap:wrap;gap:12px;max-width:760px}
+.tags span{padding:10px 20px;border:1px solid var(--line);border-radius:999px;background:rgba(10,10,30,.6);transition:.25s}
+.tags span:hover{border-color:var(--blue);box-shadow:0 0 18px rgba(0,212,255,.4);transform:translateY(-3px)}
+.sk{margin-bottom:26px}.sk h3{font:600 15px 'Unbounded',sans-serif;color:var(--blue);margin:0 0 12px}
+.tl{border-left:1px solid var(--purple);padding-left:24px;margin-bottom:30px;max-width:640px}.tl h3{font:600 18px 'Unbounded',sans-serif;margin:0 0 4px}.tl p{margin:0;color:var(--mute)}.tl small{color:var(--blue)}
+main a:not(.cta):not(.card){color:var(--blue)}
+form{display:grid;gap:14px;max-width:520px}
+input,textarea{width:100%;padding:14px 16px;background:rgba(10,10,30,.7);border:1px solid var(--line);border-radius:12px;color:var(--ink);font:inherit}
+input:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 16px rgba(0,212,255,.35)}
+button.cta{background:none;cursor:pointer;font:inherit}
+#msg{color:var(--blue);min-height:1.6em}
+.in{opacity:0;transform:translateY(30px);transition:opacity .9s,transform .9s}
+.in.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.in{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media(max-width:600px){nav a{margin-left:10px;font-size:13px}header b{display:none}header{justify-content:center}}
+</style>
+</head>
+<body>
+<canvas id="gl" aria-hidden="true"></canvas>
+<header><b>Aditi Jaiswal</b><nav><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></header>
+<main>
+<section id="top">
+<h1>Aditi Jaiswal<br>Data Engineer</h1>
+<p class="lead">Building scalable data pipelines, engineering data solutions, and turning complex data into actionable intelligence.</p>
+<a class="cta" href="#work">See my work</a>
+</section>
+<section id="work">
+<h2 class="in">Selected work</h2>
+<div class="grid">
+<a class="card in" href="https://github.com/zebraking128/Mobile-Sales-Dashboard" target="_blank" rel="noopener"><div class="orb"></div><h3>Mobile Sales Dashboard</h3><p>An interactive Power BI dashboard for sales trends, regional performance and category contribution, with KPIs, slicers, a map and detailed tables.</p><small>Power BI, Power Query, DAX</small></a>
+<a class="card in" href="https://github.com/zebraking128/Chitchat" target="_blank" rel="noopener"><div class="orb"></div><h3>Chitchat</h3><p>A chat application built with JavaScript.</p><small>JavaScript</small></a>
+<a class="card in" href="https://github.com/zebraking128/Youtube_Clone" target="_blank" rel="noopener"><div class="orb"></div><h3>YouTube Clone</h3><p>A recreation of the YouTube experience for browsing and watching videos.</p><small>View on GitHub</small></a>
+</div>
+</section>
+<section id="about">
+<h2 class="in">About me</h2>
+<p class="lead in">I am a passionate and aspiring Data Engineer with knowledge of Python, SQL, MySQL, ETL pipelines, data cleaning and data transformation. I enjoy building efficient data pipelines, managing large datasets and turning raw data into meaningful insights. I like learning new technologies, solving complex problems and developing scalable data solutions.</p>
+<div class="tl in" style="margin-top:36px"><h3>B.Tech, CSE (AI and ML)</h3><p>Roorkee Institute of Technology</p></div>
+</section>
+<section id="skills">
+<h2 class="in">Skills</h2>
+<div class="sk in"><h3>Languages</h3><div class="tags"><span>Python</span><span>SQL</span><span>PySpark</span></div></div>
+<div class="sk in"><h3>Databases</h3><div class="tags"><span>MySQL</span><span>MongoDB</span></div></div>
+<div class="sk in"><h3>Data engineering</h3><div class="tags"><span>ETL and ELT pipelines</span><span>Data warehousing</span><span>Data cleaning and transformation</span><span>Data modeling</span><span>Data integration</span><span>Real-time processing</span><span>Data quality and validation</span></div></div>
+<div class="sk in"><h3>Big data</h3><div class="tags"><span>Apache Spark</span><span>Apache Airflow</span></div></div>
+<div class="sk in"><h3>Cloud</h3><div class="tags"><span>AWS (S3, Glue, Redshift)</span><span>Microsoft Azure</span><span>Databricks</span></div></div>
+<div class="sk in"><h3>Dev tools</h3><div class="tags"><span>Git and GitHub</span><span>Docker</span><span>VS Code</span><span>CI/CD basics</span></div></div>
+<div class="sk in"><h3>Soft skills</h3><div class="tags"><span>Problem-solving</span><span>Analytical thinking</span><span>Communication</span><span>Team collaboration</span><span>Debugging</span></div></div>
+</section>
+<section id="experience">
+<h2 class="in">Experience</h2>
+<div class="tl in"><h3>Data and Business Analyst Intern</h3><p>Analytics Career Connect</p><small>Aug 2026 to Dec 2026</small></div>
+<div class="tl in"><h3>Technical Intern</h3><p>Arcoiris Logics</p><small>Jul 2025 to Sep 2025</small></div>
+</section>
+<section id="contact">
+<h2 class="in">Start a project</h2>
+<form class="in" id="f"><input required name="name" placeholder="Your name" aria-label="Your name"><input required name="email" type="email" placeholder="Email address" aria-label="Email address"><textarea required name="message" rows="4" placeholder="What are you building?" aria-label="Message"></textarea><button class="cta" type="submit">Send message</button><div id="msg" role="status"></div></form>
+<p class="lead in">Or reach me directly: <a href="mailto:aditi01aditi@gmail.com">aditi01aditi@gmail.com</a>, <a href="https://www.linkedin.com/in/aditi-jaiswal-02678629b/" target="_blank" rel="noopener">LinkedIn</a>, <a href="https://github.com/zebraking128" target="_blank" rel="noopener">GitHub</a></p>
+</section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var cv=document.getElementById('gl');
+var R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
+R.setPixelRatio(Math.min(devicePixelRatio,2));
+var S=new THREE.Scene();S.fog=new THREE.FogExp2(0x000000,.035);
+var C=new THREE.PerspectiveCamera(60,1,.1,200);C.position.z=9;
+var blue=0x00d4ff,purple=0x9d4dff;
+// hero: wireframe torus knot + inner solid core
+var knot=new THREE.Group(),packets=[];
+(function(){var bm=new THREE.BoxGeometry(.5,.5,.5),lm=[];
+for(var k=0;k<10;k++){var phi=Math.acos(1-2*(k+.5)/10),th=Math.PI*(1+Math.sqrt(5))*k,R0=4.2;
+var p=new THREE.Vector3(R0*Math.sin(phi)*Math.cos(th),R0*Math.cos(phi),R0*Math.sin(phi)*Math.sin(th));
+var b=new THREE.Mesh(bm,new THREE.MeshBasicMaterial({color:k%2?purple:blue,wireframe:true}));b.position.copy(p);knot.add(b);
+lm.push(p.x,p.y,p.z,0,0,0);
+for(var j=0;j<3;j++){var d=new THREE.Mesh(new THREE.SphereGeometry(.07,8,8),new THREE.MeshBasicMaterial({color:k%2?0xd6b3ff:0x9ff0ff}));knot.add(d);packets.push({m:d,p:p,o:j/3+k*.13})}}
+knot.add(new THREE.LineSegments(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute(lm,3)),new THREE.LineBasicMaterial({color:0x4a5cff,transparent:true,opacity:.35})))})();
+var core=new THREE.Group();for(var c0=0;c0<3;c0++){var cy=new THREE.Mesh(new THREE.CylinderGeometry(1.2,1.2,.4,32),new THREE.MeshBasicMaterial({color:c0===1?blue:purple,wireframe:true}));cy.position.y=(c0-1)*.6;core.add(cy)}
+var grp=new THREE.Group();grp.add(knot,core);grp.position.set(3.2,0,0);S.add(grp);
+// orbit rings
+var rings=[];for(var i=0;i<3;i++){var r=new THREE.Mesh(new THREE.TorusGeometry(3.4+i*.7,.012,8,160),new THREE.MeshBasicMaterial({color:i%2?purple:blue}));r.rotation.set(Math.random()*3,Math.random()*3,0);grp.add(r);rings.push(r)}
+// particle field
+var N=2600,pos=new Float32Array(N*3),col=new Float32Array(N*3),cb=new THREE.Color(blue),cp=new THREE.Color(purple);
+for(i=0;i<N;i++){pos[i*3]=(Math.random()-.5)*60;pos[i*3+1]=(Math.random()-.5)*60;pos[i*3+2]=(Math.random()-.5)*90-10;
+var c=Math.random()<.5?cb:cp;col.set([c.r,c.g,c.b],i*3)}
+var pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));pg.setAttribute('color',new THREE.BufferAttribute(col,3));
+var pts=new THREE.Points(pg,new THREE.PointsMaterial({size:.07,vertexColors:true,transparent:true,opacity:.85,depthWrite:false}));S.add(pts);
+// floor grid
+var grid=new THREE.GridHelper(120,60,purple,0x2a1060);grid.position.y=-7;grid.material.transparent=true;grid.material.opacity=.45;S.add(grid);
+function size(){var w=innerWidth,h=innerHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();grp.position.x=w<800?0:3.2;grp.position.y=w<800?2:0}
+size();addEventListener('resize',size);
+var mx=0,my=0,sy=0,ty=0;
+addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+addEventListener('scroll',function(){ty=scrollY/Math.max(1,document.body.scrollHeight-innerHeight)},{passive:true});
+var t0=performance.now();
+function loop(){
+ var t=(performance.now()-t0)/1000;if(reduce)t=0;
+ sy+=(ty-sy)*.06;
+ knot.rotation.x=t*.06+sy*2;knot.rotation.y=t*.12+sy*3;core.rotation.y=t*.4;
+ rings.forEach(function(r,k){r.rotation.z=t*(.2+k*.1)});packets.forEach(function(d){var f=(t*.35+d.o)%1;d.m.position.copy(d.p).multiplyScalar(1-f)});
+ var s=1+Math.sin(t*1.5)*.03;core.scale.set(s,s,s);
+ pts.rotation.y=t*.01+sy*1.2;
+ C.position.x+=(mx*2.5-C.position.x)*.05;C.position.y+=(-my*1.8-sy*5-C.position.y)*.05;
+ C.position.z=9-sy*14;
+ grp.position.z=-sy*6;
+ C.lookAt(0,-sy*5,-sy*10);
+ R.render(S,C);requestAnimationFrame(loop)}
+loop();
+// card tilt
+document.querySelectorAll('.card').forEach(function(el){
+ el.addEventListener('pointermove',function(e){if(reduce)return;var b=el.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;
+ el.style.transform='rotateY('+x*18+'deg) rotateX('+(-y*18)+'deg)'});
+ el.addEventListener('pointerleave',function(){el.style.transform=''})});
+// nav scroll
+document.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(e){var t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:reduce?'auto':'smooth'})}})});
+// reveal
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('on')})},{threshold:.15});
+document.querySelectorAll('.in').forEach(function(el){io.observe(el)});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var fm=e.target,msg=document.getElementById('msg');msg.textContent='Sending...';
+var fail=function(){msg.textContent='Could not send. Please email aditi01aditi@gmail.com instead.'};
+fetch('https://formspree.io/f/xzerdeal',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(fm)}).then(function(r){if(r.ok){msg.textContent='Thanks, your message has been sent.';fm.reset()}else{fail()}}).catch(fail)});
+})();
+</script>
+</body>
+</html>
